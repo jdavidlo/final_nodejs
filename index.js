@@ -17,22 +17,11 @@ app.use(morgan('dev'));
 app.use(express.json())
 app.use(express.urlencoded({extended: true}))
 
-
-
-// verbos HTTP
-// GET - obtener 
-// POST - almacenar / crear 
-// PATCH - modificar una parte 
-// PUT - modificar 
-// DELETE - borrar
-
 app.get("/", index)
 
 app.use("/user", user)
 
 app.use(auth)
-
-// app.use("/pokemon", pokemon)
 
 app.use(notFound)
 

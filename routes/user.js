@@ -67,7 +67,6 @@ user.delete("/:id([0-9]{1,3})", async (req, res, next) => {
     }
     return res.status(500).json({code: 500, message:"Ocurrió un error"})   
 
-    // return res.status(200).json({code: 200, message: query});
 })
 
 user.put("/:id([0-9]{1,3})", async (req, res, next) =>{
