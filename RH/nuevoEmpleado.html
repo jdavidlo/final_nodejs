@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Recursos humanos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script src="./js/rh.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+   <div class="row">
+    <div class="col-2 img"> 
+        <div class="row left">
+            <div class="col-12 c">
+                
+                <div class="input-group">
+                    <input type="text" class="form-control" id="search" placeholder="Buscar a...">
+                    <div class="input-group-append">
+                      <button class="btn btn-secondary search" type="button">
+                        <i class="fa fa-search" ></i>
+                      </button>
+                    </div>
+                  </div>
+
+            </div>
+            <div class="col-12 c">
+                <a href="./nuevoEmpleado.html"><i class="fa fa-plus" aria-hidden="true"> <span> Nuevo empleado</span></i></a>
+            </div>
+            <div class="col-12 c">
+                <a href="./listaEmpleados.html"><i class="fa fa-list" aria-hidden="true"> <span> Lista de empleados</span></i></a>
+            </div>
+            
+        </div>
+    </div>
+    <div class="col-10">
+        <div class="col-12 text-right">
+            <button class="sin">
+                <i class="fa fa-list" aria-hidden="true"> <span> Cerrar Sesión</span></i>
+            </button>
+        </div>
+        <div class="cont">
+
+            <div class="row right-s">
+                <div class="col-12 c"><br>
+                    <h1>Nuevo empleado</h1>
+                </div>
+    
+                <div class="col-12 tt">
+                    <label for="input-name">Nombre</label>
+                    <input type="text" class="form-control" id="input-name" placeholder="David">
+                </div>
+    
+                <div class="col-12 tt">
+                    <label for="input-lastName">Apellidos</label>
+                    <input type="email" class="form-control" id="input-lastName" placeholder="Lozano Ortiz">
+                </div>
+    
+                <div class="col-12 tt">
+                    <label for="input-phone">Teléfono</label>
+                    <input type="email" class="form-control" id="input-phone" placeholder="4427490775">
+                </div>
+                <div class="col-12 tt">
+                    <label for="input-address">Dirección</label>
+                    <input type="email" class="form-control" id="input-address" placeholder="Playa luis #215">
+                </div>
+    
+                 <div class="col-12 tt">
+                        <label for="input-mail">Correo electrónico</label>
+                        <input type="email" class="form-control" id="input-mail" placeholder="correo@dominio.ext">
+                </div>
+    
+                    <div class="col-12 tt">
+                        <label for="input-password">Contraseña</label>
+                        <input type="password" class="form-control" id="input-password" placeholder="***********">
+                    </div>
+                    <div class="col-12">
+                        <div class="d-flex justify-content-between">
+                            <button class="btn btn-primary newE">Registrar</button>
+                        </div>
+                    </div>
+                    
+            </div>
+
+        </div>
+    </div>
+   </div>
+</body>
+</html>

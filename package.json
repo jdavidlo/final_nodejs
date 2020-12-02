@@ -4,7 +4,12 @@
   "description": "final proyect node.js",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon index",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdavidlo/final_nodejs"
   },
   "keywords": [
     "api",
@@ -14,6 +19,10 @@
   ],
   "author": "david lozano",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jdavidlo/final_nodejs/issues"
+  },
+  "homepage": "https://github.com/jdavidlo/final_nodejs#readme",
   "dependencies": {
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
